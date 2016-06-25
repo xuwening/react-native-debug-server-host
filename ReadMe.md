@@ -22,7 +22,10 @@
 
 推荐将url生成二维码，使用二维码扫描代替手工输入，点击OK时自动reload新服务器地址页面。
 
+例如需要替换的服务器Url: `http://110.110.10.110:8081/index.ios.bundle?platform=ios&dev=true`，使用二维码生成工具将此Url生成二维码。使用调试工具中的`Input URL with QRScan`打开二维码扫描工具，扫描识别后自动填充到地址框，确认没有问题后点击OK，自动reload加载新地址。
+
 ![](./image/2.png)
+
 
 ## 运行Demo
 
