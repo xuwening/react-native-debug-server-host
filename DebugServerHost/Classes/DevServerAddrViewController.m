@@ -21,15 +21,22 @@
 -(void)viewDidLoad {
   
   [self.view addSubview: self.urlTextField];
-  [self.view addSubview: self.qrScanButton];
+//  [self.view addSubview: self.qrScanButton];
   [self.view addSubview: self.cancelButton];
   [self.view addSubview: self.okButton];
   
   self.view.backgroundColor = [UIColor whiteColor];
   
-  self.urlTextField.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"RCT_SERVER_ADDR_URL"] ? : @"";
+//  self.urlTextField.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"RCT_SERVER_ADDR_URL"] ? : @"";
+  
+  UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+  [self.view addGestureRecognizer: tap];
 }
 
+-(IBAction)tapAction:(id)sender {
+  
+  [self.urlTextField resignFirstResponder];
+}
 
 -(UITextField *)urlTextField {
   if (_urlTextField == nil) {
@@ -39,6 +46,7 @@
     _urlTextField = [[UITextField alloc] initWithFrame: rect];
     _urlTextField.borderStyle = UITextBorderStyleRoundedRect;
     _urlTextField.placeholder = @"Input URL manual";
+    _urlTextField.text = [[NSUserDefaults standardUserDefaults] stringForKey:@"RCT_jsLocation"];
 //    _urlTextField.backgroundColor = [UIColor redColor];
   }
   
@@ -95,7 +103,7 @@
   
   NSString *url = [_urlTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
   
-  [[NSUserDefaults standardUserDefaults] setObject:url forKey:@"RCT_SERVER_ADDR_URL"];
+  [[NSUserDefaults standardUserDefaults] setObject:url forKey:@"RCT_jsLocation"];
   [[NSUserDefaults standardUserDefaults] synchronize];
   
   [self dismissViewControllerAnimated:YES completion:^{

@@ -33,5 +33,7 @@ Demo目录是React Native默认工程环境，用于演示DebugServerHost，删�
 
 执行：`npm install`即可安装node_modules，打开iOS工程运行。
 
-## 
+## 特点
+
+
 
