@@ -3,9 +3,8 @@
 
 ## 更新（2016.11.15）
 
-一、由于react native更换的URL的使用方式（增加了RCTBundleURLProvider类处理URL），所以旧的方式不再适应，进行新版本的改造，不再适配v0.29以下版本。
+由于react native更换的URL的使用方式（增加了RCTBundleURLProvider类处理URL），所以旧的方式不再适应，进行新版本的改造，不再适配v0.29以下版本。
 
-二、为了方便使用，增加了cocoaPods的支持。
 
 ## React Native服务器地址更换
 
@@ -15,9 +14,7 @@
 
 ## 安装
 
-1、cocoapods方式：Podfile添加`pod 'DebugServerHost'`
-
-2、直接将DebugServerHost文件夹添加到项目中即可，无需任何设置。
+直接将DebugServerHost文件夹添加到项目中即可，无需任何设置。
 
 ## 使用
 
@@ -25,7 +22,7 @@
 
 ![](./image/2.png)
 
->>> 注意：修改完地址需要重新启动APP才能生效。
+> 注意：修改完地址需要重新启动APP才能生效。
 
 
 
