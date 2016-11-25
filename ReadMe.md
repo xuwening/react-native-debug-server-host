@@ -16,6 +16,7 @@
 ## 安装
 
 1、cocoapods方式：Podfile添加`pod 'DebugServerHost'`
+
 2、直接将DebugServerHost文件夹添加到项目中即可，无需任何设置。
 
 ## 使用
