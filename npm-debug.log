@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/hongjingjun/.nvm/versions/node/v5.11.0/bin/node',
+1 verbose cli   '/Users/hongjingjun/.nvm/versions/node/v5.11.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-native-DebugServerHost',
+1 verbose cli   '--save' ]
+2 info using npm@4.0.2
+3 info using node@v5.11.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData react-native-DebugServerHost
+8 silly fetchNamedPackageData react-native-DebugServerHost
+9 silly mapToRegistry name react-native-DebugServerHost
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'react-native-DebugServerHost',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'react-native-DebugServerHost',
+12 silly mapToRegistry   name: 'react-native-DebugServerHost',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://registry.npmjs.org/react-native-DebugServerHost
+14 verbose request uri http://registry.npmjs.org/react-native-DebugServerHost
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 01:20:47
+17 verbose request using bearer token for auth
+18 verbose request id a87aeb54e5c880a3
+19 verbose etag W/"583b1106-7dc"
+20 verbose lastModified Sun, 27 Nov 2016 16:59:50 GMT
+21 http request GET http://registry.npmjs.org/react-native-DebugServerHost
+22 http 304 http://registry.npmjs.org/react-native-DebugServerHost
+23 verbose headers { server: 'nginx/1.10.1',
+23 verbose headers   'last-modified': 'Sun, 27 Nov 2016 16:59:50 GMT',
+23 verbose headers   etag: '"583b1106-7dc"',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Sun, 27 Nov 2016 17:20:40 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-lcy1148-LCY',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1480267240.170645,VS0,VE17',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 304,
+24 silly get   { server: 'nginx/1.10.1',
+24 silly get     'last-modified': 'Sun, 27 Nov 2016 16:59:50 GMT',
+24 silly get     etag: '"583b1106-7dc"',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Sun, 27 Nov 2016 17:20:40 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-lcy1148-LCY',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1480267240.170645,VS0,VE17',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose etag http://registry.npmjs.org/react-native-DebugServerHost from cache
+26 verbose get saving react-native-DebugServerHost to /Users/hongjingjun/.npm/registry.npmjs.org/react-native-DebugServerHost/.cache.json
+27 verbose correctMkdir /Users/hongjingjun/.npm correctMkdir not in flight; initializing
+28 silly install normalizeTree
+29 silly loadCurrentTree Finishing
+30 silly loadIdealTree Starting
+31 silly install loadIdealTree
+32 silly cloneCurrentTree Starting
+33 silly install cloneCurrentTreeToIdealTree
+34 silly cloneCurrentTree Finishing
+35 silly loadShrinkwrap Starting
+36 silly install loadShrinkwrap
+37 silly loadShrinkwrap Finishing
+38 silly loadAllDepsIntoIdealTree Starting
+39 silly install loadAllDepsIntoIdealTree
+40 silly rollbackFailedOptional Starting
+41 silly rollbackFailedOptional Finishing
+42 silly runTopLevelLifecycles Finishing
+43 silly install printInstalled
+44 verbose stack Error: Refusing to install package with name "react-native-DebugServerHost" under a package
+44 verbose stack also called "react-native-DebugServerHost". Did you name your project the same
+44 verbose stack as the dependency you're installing?
+44 verbose stack
+44 verbose stack For more information, see:
+44 verbose stack     <https://docs.npmjs.com/cli/install#limitations-of-npms-install-algorithm>
+44 verbose stack     at checkSelf (/Users/hongjingjun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+44 verbose stack     at Array.<anonymous> (/Users/hongjingjun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+44 verbose stack     at LOOP (/Users/hongjingjun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+44 verbose stack     at chain (/Users/hongjingjun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+44 verbose stack     at /Users/hongjingjun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/lib/install/validate-args.js:16:5
+44 verbose stack     at /Users/hongjingjun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+44 verbose stack     at Array.forEach (native)
+44 verbose stack     at /Users/hongjingjun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+44 verbose stack     at Array.forEach (native)
+44 verbose stack     at asyncMap (/Users/hongjingjun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+45 verbose cwd /Users/hongjingjun/github/DebugServerHost
+46 error Darwin 16.1.0
+47 error argv "/Users/hongjingjun/.nvm/versions/node/v5.11.0/bin/node" "/Users/hongjingjun/.nvm/versions/node/v5.11.0/bin/npm" "install" "react-native-DebugServerHost" "--save"
+48 error node v5.11.0
+49 error npm  v4.0.2
+50 error code ENOSELF
+51 error Refusing to install package with name "react-native-DebugServerHost" under a package
+51 error also called "react-native-DebugServerHost". Did you name your project the same
+51 error as the dependency you're installing?
+51 error
+51 error For more information, see:
+51 error     <https://docs.npmjs.com/cli/install#limitations-of-npms-install-algorithm>
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]

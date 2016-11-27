@@ -1,0 +1,24 @@
+{
+  "name": "react-native-DebugServerHost",
+  "version": "0.2.5",
+  "description": "React Native Debug server host for iOS ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuwening/react-native-debug-server-host.git"
+  },
+  "keywords": [
+    "react-native",
+    "server",
+    "host"
+  ],
+  "author": "xuwening",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xuwening/react-native-debug-server-host/issues"
+  },
+  "homepage": "https://github.com/xuwening/react-native-debug-server-host#readme"
+}
