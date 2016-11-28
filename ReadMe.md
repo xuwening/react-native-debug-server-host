@@ -7,7 +7,7 @@
 
 ## 更新（2016.11.15）
 
-> 由于react native更换的URL的使用方式（增加了RCTBundleURLProvider类处理URL），所以旧的方式不再适应，进行新版本的改造，不再适配v0.29以下版本。
+> 由于react native更换的URL的使用方式（增加了RCTBundleURLProvider类处理URL），所以旧的方式不再适应，进行新版本的改造，不再适配v0.29以下版本。新方式下只需输入IP地址，比较好输入，因此去掉了二维码扫描方式。
 
 
 ## React Native服务器地址更换
@@ -20,11 +20,12 @@
 
 方式一：
 
-使用`rnpm install react-native-DebugServerHost`来安装，自动集成到工程。（注意名称，不是react-native-debug-server-host）
+使用`rnpm install react-native-DebugServerHost`来安装，自动集成到工程。（注意名称，不是react-native-debug-server-host，没有安装rnpm的先安装`npm install rnpm -g`）
 
 方式二：
 
 直接将DebugServerHost文件夹添加到项目中即可，无需任何设置。
+
 
 ## 使用
 
