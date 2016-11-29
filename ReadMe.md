@@ -22,6 +22,12 @@
 
 使用`rnpm install react-native-DebugServerHost`来安装，自动集成到工程。（注意名称，不是react-native-debug-server-host，没有安装rnpm的先安装`npm install rnpm -g`）
 
+或者：
+
+`npm install react-native-DebugServerHost --save`
+
+`react-native link`
+
 方式二：
 
 直接将DebugServerHost文件夹添加到项目中即可，无需任何设置。
