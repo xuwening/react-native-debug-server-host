@@ -13,7 +13,7 @@
 
 NSString * const ChangeServerAddrNotification = @"com.change.server.addr";
 
-
+#if RCT_DEV
 @implementation RCTDevMenu (serverAddr)
 
 
@@ -35,7 +35,7 @@ NSString * const ChangeServerAddrNotification = @"com.change.server.addr";
 }
 
 @end
-
+#endif
 
 @implementation DevServerAddr {
   
