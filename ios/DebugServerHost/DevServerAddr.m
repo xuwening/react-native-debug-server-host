@@ -45,7 +45,7 @@ NSString * const ChangeServerAddrNotification = @"com.change.server.addr";
 
 +(void) load {
   
-  RCTSwapInstanceMethods([RCTDevMenu class], @selector(menuItems), @selector(newMenuItems));
+  RCTSwapInstanceMethods([RCTDevMenu class], @selector(_menuItemsToPresent), @selector(newMenuItems));
   
   static const DevServerAddr *_static_Dev_addr;
   static dispatch_once_t onceToken;
