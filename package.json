@@ -1,6 +1,6 @@
 {
   "name": "react-native-DebugServerHost",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "React Native Debug server host for iOS ",
   "main": "index.js",
   "scripts": {
