@@ -1,6 +1,10 @@
 
 # Debug Server Host For iOS
 
+## 更新(2017.10.12)
+
+> 增加pod集成方式
+
 ## 更新 (2017.6.20)
 
 > 半年没关注 RN 发现变化还真不少，由于调试函数发生变化，这个库也需要更新下否则不起作用（最新RN版本0.45)。
@@ -21,19 +25,25 @@
 
 ![](./image/1.png)
 
-## 安装
+## 集成
 
-方式一：
-
-使用`rnpm install react-native-DebugServerHost`来安装，自动集成到工程。（注意名称，不是react-native-debug-server-host，没有安装rnpm的先安装`npm install rnpm -g`）
-
-或者：
+#### 自动集成
 
 `npm install react-native-DebugServerHost --save`
 
 `react-native link`
 
-方式二：
+#### pod集成
+
+`npm install react-native-DebugServerHost --save`
+
+podFile文件添加：
+
+`pod 'DebugServerHost', :path => '../node_modules/react-native-DebugServerHost'`
+
+`pod install`
+
+#### 手动集成：
 
 直接将DebugServerHost文件夹添加到项目中即可，无需任何设置。
 
