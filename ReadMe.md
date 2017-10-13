@@ -4,11 +4,13 @@
 ## 更新(2017.10.12)
 
 > 增加pod集成方式
+
 > 解决根rootViewController不是navigation时，无法显示debugHost界面的bug
 
 ## 更新 (2017.6.20)
 
 > 半年没关注 RN 发现变化还真不少，由于调试函数发生变化，这个库也需要更新下否则不起作用（最新RN版本0.45)。
+
 > 如需兼容多版本，RN 版本判断下，然后设置`RCTSwapInstanceMethods([RCTDevMenu class], @selector(_menuItemsToPresent), @selector(newMenuItems));`中的@selector即可。
 
 ## 更新（2016.11.28）
