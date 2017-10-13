@@ -10,6 +10,7 @@
 #import "RCTDevMenu.h"
 #import "RCTUtils.h"
 #import "DevServerAddrViewController.h"
+#import "UIViewController+Utils.h"
 
 NSString * const ChangeServerAddrNotification = @"com.change.server.addr";
 
@@ -71,12 +72,20 @@ NSString * const ChangeServerAddrNotification = @"com.change.server.addr";
 
 - (void)changeServerAddr:(NSNotification *)notification {
   
-  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    UIViewController *controller = [UIViewController currentViewController];
+    if (controller == nil) {
+        return ;
+    }
     
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:_serverAddrviewController animated:YES completion:^{
-      NSLog(@"");
-    }];
-  });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        if ([controller isKindOfClass: [UINavigationController class]]) {
+            
+            [controller presentViewController:_serverAddrviewController animated:YES completion:^{
+                NSLog(@"");
+            }];
+        }
+    });
   
 }
 

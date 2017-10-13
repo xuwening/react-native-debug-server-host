@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DebugServerHost"
-  s.version      = "0.3.2"
+  s.version      = "0.3.5"
   s.summary      = "change server host dynamically."
 
   s.description  = <<-DESC
