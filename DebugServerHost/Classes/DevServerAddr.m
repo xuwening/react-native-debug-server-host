@@ -79,12 +79,12 @@ NSString * const ChangeServerAddrNotification = @"com.change.server.addr";
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        if ([controller isKindOfClass: [UINavigationController class]]) {
-            
+//        if ([controller isKindOfClass: [UINavigationController class]]) {
+        
             [controller presentViewController:_serverAddrviewController animated:YES completion:^{
                 NSLog(@"");
             }];
-        }
+//        }
     });
   
 }

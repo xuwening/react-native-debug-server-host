@@ -61,8 +61,12 @@
     
     // Find best view controller
     UIViewController* viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    return [UIViewController findBestViewController:viewController];
+    UIViewController *last = [UIViewController findBestViewController:viewController];
+    if (last == nil) {
+        return viewController;
+    }
     
+    return  last;
 }
 
 @end
